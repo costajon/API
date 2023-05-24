@@ -99,3 +99,52 @@ URL: /produto/{id}
 Descrição: Este método inativa um produto com base no seu ID. Ao informar o ID do produto na URL, o produto correspondente será marcado como inativo na base de dados, mantendo seus dados, mas indicando que não está mais disponível.
 
 ______________________________________________________________________________________________________________________________________________________________________________________________
+
+# API de Agenda
+
+Esta API é responsável por gerenciar contatos em uma aplicação que possui agenda. Ela fornece requisições para cadastrar, buscar, listar, atualizar e deletar contatos.
+
+## Requisições da API
+
+Ao utilizar esta API, é importante fornecer as informações necessárias no corpo de cada requisição, conforme descrito abaixo:
+
+### Cadastrar um novo contato
+
+Método: `POST`
+
+URL: `/contato`
+
+Descrição: Este método permite cadastrar um novo contato na base de dados. Imagine uma página de cadastro de contato com os campos Nome e Telefone. Esses campos serão preenchidos pelo usuário e logo apos esses dados inseridos serão validados.
+
+### Buscar contato pelo ID
+
+Método: `GET`
+
+URL: `/contato/{id}`
+
+Descrição: Este método retorna os dados de um contato com base no seu Id. Imagine uma tela onde tem-se o campo para inserir o ID e o mesmo retorna os dados(nome e telefone).
+
+### Listar todos os contatos
+
+Método: `GET`
+
+URL: `/contato`
+
+Descrição: Este método retorna uma lista com todos os contatos cadastrados. Imagine-se em uma página que ao clicar num botão ou selecionar uma opção de listar contatos o mesmo puxará todos cadastrados na base de dados.
+
+### Atualizar um contato pelo ID
+
+Método: `PUT`
+
+URL: `/contato/{id}`
+
+Descrição: Este método permite atualizar os dados de um contato existente com base no seu ID. Imagine que você precisa atualizar dados de um contato. Poderiamos ter uma página com os campos para buscar esse ID e se o mesmo for encontrado na base de dados te dará possibilidade de atualizar os dados.
+
+### Deletar um contato pelo ID
+
+Método: `DELETE`
+
+URL: `/contato/{id}`
+
+Descrição: Este método deleta um contato com base no seu Id. Imagine um contato que está cadastrado na base de dados, porém depois de um tempo você decide deletar sem querer manter os dados. Basta realizar o delete e pronto.
+
